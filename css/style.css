@@ -358,11 +358,11 @@ svg {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  border: 1px solid blueviolet;
+  /* border: 1px solid blueviolet; */
 }
 
 .skill {
-  border: 1px solid rosybrown;
+  /* border: 1px solid rosybrown; */
   display: flex;
   justify-content: center;
   align-items: center;
