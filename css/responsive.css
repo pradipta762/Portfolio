@@ -1,0 +1,165 @@
+@media screen and (max-width: 768px) {
+
+  /* ---------------------- Navigation Section ---------------------- */
+
+  .mob-nav {
+    flex-direction: column;
+    position: absolute;
+    top: 130%;
+    right: 0;
+    background-color: var(--primary-color);
+    height: 100svh;
+    width: 100%;
+    align-items: self-start;
+    border-top: 1px solid var(--secondary-color);
+    visibility: hidden;
+  }
+
+  .mob-nav.visible {
+    visibility: visible;
+  }
+
+  .mob-nav #nav-links,
+  .mob-nav #nav-btns,
+  #nav-btns #switch-theme-section {
+    width: 100%;
+    left: 0;
+  }
+
+  .mob-nav #nav-links,
+  .mob-nav #nav-btns {
+    padding: 1rem;
+  }
+
+  .mob-nav #nav-links {
+    border-bottom: 1px solid var(--secondary-color);
+  }
+
+  #open-mob-nav,
+  #close-mob-nav {
+    display: flex;
+  }
+
+  #open-mob-nav.hidden,
+  #close-mob-nav.hidden {
+    display: none;
+  }
+
+  .mob-nav #nav-links {
+    flex-direction: column;
+    border-right: none;
+  }
+
+  #nav-links li a:hover::after {
+    transform: scaleX(0);
+  }
+
+  #switch-theme-section span {
+    display: inline-block;
+  }
+
+  #nav-btns {
+    flex-direction: column;
+    float: left;
+  }
+
+  #switch-theme-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #download-cv-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* ---------------------- Hero Section ---------------------- */
+  .section-content-wrapper {
+    flex-direction: column;
+  }
+
+  #hero-img-section img {
+    object-fit: cover;
+  }
+
+  #hero-content-section {
+    order: 1;
+  }
+
+  #hero-img-section {
+    order: 0;
+  }
+  
+  /* ---------------------- Education section ---------------------- */
+
+  .education-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .institute-name {
+    order: 0;
+  }
+
+  .course-duration {
+    order: 1;
+  }
+
+  .course-details {
+    order: 2;
+    margin-left: 0;
+  }
+
+  /* ---------------------- Work section ---------------------- */
+
+  .work-card {
+    flex-direction: column;
+  }
+
+  .project-img, 
+  .project-description {
+    width: 100%;
+  }
+
+  .project-img {
+    order: 0;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .project-description {
+    padding: 2rem;
+    order: 1;
+  }
+
+
+
+  /* ---------------------- Testimonial Section ---------------------- */
+
+  .card-wrapper {
+    flex-direction: column;
+  }
+
+  /* ---------------------- Get in touch ---------------------- */
+
+  form {
+    width: 100%;
+  }
+
+  #form-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .email-phone {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .email-phone input {
+    width: 100%;
+  }
+
+}
