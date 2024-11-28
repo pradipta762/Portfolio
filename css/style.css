@@ -596,6 +596,10 @@ input, textarea {
   color: var(--text-primary-clr);
 }
 
+textarea {
+  resize: vertical;
+}
+
 #form-submit {
   border: none;
   outline: none;
